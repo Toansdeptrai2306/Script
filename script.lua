@@ -51,6 +51,7 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc61
       local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
+                     end
     })    AddButton(Tab1o, {
     Name = "Cut Tay Hub"
    Callback = function()
