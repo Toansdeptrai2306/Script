@@ -4,7 +4,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        local Window = MakeWindow({
          Hub = {
-         Title = "Hub By Thanh Tuấn ",
+         Title = "Nguyễn Minh Toàn",
          Animation = "Script tổng hợp"
          },
         Key = {
@@ -12,7 +12,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
         Title = "Key System",
         Description = "Bạn Cần Get Ket Để Sử Dụng",
         KeyLink = "https://link4m.com/NNTWW0yi",
-        Keys = {"Thanhh Tuấn "},
+        Keys = {"Thanhh Tuấn"},
         Notifi = {
         Notifications = true,
         CorrectKey = "Running the Script...",
@@ -51,7 +51,11 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc61
       local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
-                     }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
+                     }
+              }) AddButton(Tab1o, {
+              Name = "Cụt Tay Hub"
+              Callback - function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/diemquy/CutTayHub/refs/heads/main/Cuttayhubreal.lua'))()
   end
   })
