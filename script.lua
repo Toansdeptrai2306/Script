@@ -1,58 +1,80 @@
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Tubo-lite/refs/heads/main/Haidepzai"))()
-local SaveManager = 
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+Source
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MinhNghia2k11/Ui-Library/main/Source"))()
 
-       local Window = MakeWindow({
-         Hub = {
-         Title = "Teddy",
-         Animation = "Script tổng hợp"
-         },
-        Key = {
-        KeySystem = false,
-        Title = "Key System",
-        Description = "",
-        KeyLink = "",
-        Keys = {"MinhhToan"},
-        Notifi = {
-        Notifications = true,
-        CorrectKey = "Đang Chạy Script...",
-       Incorrectkey = "Key Của Bạn Đã Sai",
-       CopyKeyLink = "Đã Sao Chép"
-      }
-    }
-  })
+Make Windows
+local Windows = Library:MakeWindow({
+	Name = "Teddy Hub", 
+	Description = "By ! Night", 
+	LogoInfo = "rbxassetid://123809008408464",
+	NameInfo = "Owner Info",
+    NamePlayers = "! Nightx",
+    InfoColor = Color3.fromRGB(255, 38, 42),
+    LogoPlayers = "rbxassetid://123809008408464",
+	InfoDesc = "Name : Teddy đẹp zai| 2k8|Blox Fruits"
+})
 
-       MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=123809008408464",
-       Size = {40, 40},
-       Color = Color3.fromRGB(10, 10, 10),
-       Corner = true,
-       Stroke = false,
-       StrokeColor = Color3.fromRGB(255, 0, 0)
-      })
+Make Notification
+Library:MakeNotify({
+    Title = "Teddy Hub",
+    Content = "Notification",
+    Description = "Nah i'd Win",
+    Time = 5 
+})
 
------- Tab
-     local Tab1o = MakeTab({Name = "Script Farm"})
+Make Tab
+local Tab = Windows:MakeTab({Name = "Tab"})
 
 
-------- BUTTON
+Make Section Tab
+local SectionTab = Tab1:MakeSection({
+    Title = "Tab",
+    Content = "Nigga"
+})
 
-    AddButton(Tab1o, {
-     Name = "W azure",
+Make Section
+SectionTab:Section("Cocaiconcac")
+
+Make Paragraph
+SectionTab:MakeParagraph({
+    Title = "Paragraph",
+    Description = "This Is Paragraph"
+})
+
+Make Button
+SectionTab:MakeButton({
+    Name = "Button",
+    Description = "Is This Button",
     Callback = function()
-    getgenv().Team = "Pirates"
-getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
-getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
-  end
-     })   AddButton(Tab1o, {
-     Name = "Redz Hub",
-    Callback = function()
-      local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
+        print("Hello World")
+    end
+})
+
+Make Toggle
+local Toggle = SectionTab:MakeToggle({
+    Name = "Toggle",
+    Description = "Is This Toggle",
+    Default = false,
+    Callback = function(Value)
+        print(Value)
+    end
+})
+
+Make Slider
+Tab:MakeSlider({
+    Name = "Slider",
+    Max = 300,
+    Min = 50,
+    Default = 100,
+    Callback = function(Value)
+        print(Value)
+    end
+})
+
+Make TextBox
+Tab:MakeTextBox({
+    Name = "Textbox",
+    Default = "...",
+    Callback = function(Value)
+        print(Value)
+    end
 }
-
-loadstring(game:HttpGet('https://raw.githubusercontent.com/diemquy/CutTayHub/refs/heads/main/Cuttayhubreal.lua'))()"))(Settings)
-  end
-  })
